@@ -123,4 +123,19 @@ section#detalhes h2 {
 }
 
 section#detalhes div#video {
+  width: 100%;
+  height: 0;
+  padding-bottom: 58.25%;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+section#detalhes div#video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
