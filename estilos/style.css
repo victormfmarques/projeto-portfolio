@@ -182,6 +182,37 @@ section#detalhes article#skills div#skill-container div.barra div.progresso {
   border-radius: 4px;
 }
 
+section#detalhes article#formacao div#formacao-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+section#detalhes article#formacao div#formacao-container div.curso {
+  background-color: var(--fundo-principal);
+  border-left: 5px solid var(--destaque-inverso);
+  border-radius: 8px;
+  padding-left: 15px;
+  transition: border-width .5s ease-in-out, border-color .5s ease-in-out;
+}
+
+section#detalhes article#formacao div#formacao-container div.curso:hover {
+  border-left-width: 15px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+section#detalhes article#formacao div#formacao-container div.curso p.periodo {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+section#detalhes article#formacao div#formacao-container div.curso h3.instituicao {
+  color: var(--destaque-inverso);
+  font-size: 1.1em;
+}
+
 @media screen and (min-width: 768px) {
   main {
     grid-template-columns: auto 300px 1fr auto;
