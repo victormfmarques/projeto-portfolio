@@ -18,9 +18,18 @@
   --fundo-principal: #f5f5f5;
   --texto: #222222;
   --texto-inverso: #ffffff;
-  --destaque: #149800;
-  --destaque-inverso: #52E55B;
+  --destaque: #15803d;          /* Verde floresta */
+  --destaque-inverso: #ea580c;  /* Laranja terroso */
   --fundo-card: #ffffff;
+}
+
+body.escuro {
+  --fundo-principal: #222222;
+  --texto: #e0e0e0;
+  --texto-inverso: #333333;
+  --destaque: #10b981;          /* Verde esmeralda */
+  --destaque-inverso: #f97316;  /* Laranja suave */
+  --fundo-card: #444444;
 }
 
 body {
@@ -28,6 +37,7 @@ body {
   line-height: 1.5em;
   background-color: var(--fundo-principal);
   color: var(--texto);
+  transition: background-color .5s, color .5s ease;
 }
 
 header {
@@ -75,6 +85,10 @@ section#ficha {
   padding: 20px;
   border-radius: 8px;
   grid-column: 2;
+  }
+
+section#ficha {
+  text-align: justify;
 }
 
 section#ficha img.foto {
@@ -147,6 +161,8 @@ section#detalhes article#video div.video-container iframe {
   border-radius: 8px;
 }
 
+/*---------------SKILLS---------------*/
+
 section#detalhes article#skills div#skill-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -182,6 +198,8 @@ section#detalhes article#skills div#skill-container div.barra div.progresso {
   border-radius: 4px;
 }
 
+/*---------------FORMAÇÃO---------------*/
+
 section#detalhes article#formacao div#formacao-container {
   display: flex;
   flex-direction: column-reverse;
@@ -213,6 +231,65 @@ section#detalhes article#formacao div#formacao-container div.curso h3.instituica
   font-size: 1.1em;
 }
 
+/*---------------PROJETOS---------------*/
+
+section#detalhes article#projetos div#projetos-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+section#detalhes article#projetos div#projetos-container div.projeto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--fundo-principal);
+  border-left: 5px solid var(--destaque-inverso);
+  border-radius: 8px;
+  padding: 10px;
+  transition: border-width .5s ease-in-out, border-color .5s ease-in-out;
+  flex-direction: row-reverse;
+}
+
+section#detalhes article#projetos div#projetos-container div.projeto:hover {
+  border-left-width: 15px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+section#detalhes article#projetos div#projetos-container div.projeto p.ano {
+  font-size: 1.1em;
+}
+
+section#detalhes article#projetos div#projetos-container div.projeto img.foto {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+section#detalhes article#projetos div#projetos-container div.projeto details p {
+  text-align: justify;
+} 
+
+/*---------------RODAPÉ---------------*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--destaque);
+  height: 60px;
+}
+
+footer p {
+  color: var(--texto-inverso);
+  font-size: 1.1em;
+}
+
+/*---------------ACESSIBILIDADE---------------*/
+
 @media screen and (min-width: 768px) {
   main {
     grid-template-columns: auto 300px 1fr auto;
@@ -220,7 +297,9 @@ section#detalhes article#formacao div#formacao-container div.curso h3.instituica
 
   section#ficha {
     grid-column: 2;
-    height: 500px;
+    height: 650px;
+    position: sticky;
+    top: 65px;
   }
 
   section#detalhes {
@@ -229,5 +308,20 @@ section#detalhes article#formacao div#formacao-container div.curso h3.instituica
 
   section#detalhes article#skills div#skill-container {
     grid-template-columns: 1fr 1fr;
+  }
+
+  section#detalhes article#projetos div#projetos-container div.projeto {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  
+  section#detalhes article#projetos div#projetos-container div.projeto div.projeto-info {
+    width: 80%;
+  }
+
+  section#detalhes article#projetos div#projetos-container div.projeto img.foto {
+    aspect-ratio: 1/1;
+    max-width: 20%;
+    max-height: 200px;
   }
 }

@@ -12,11 +12,11 @@
     <header>
         <nav id="menu">
             <ul>
-                <li><a href="#"><i class="fa-solid fa-house" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-brain"></i></a></li>
-                <li><a href="#"><i class="fa-duotone fa-solid fa-graduation-cap"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-trowel-bricks"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-moon"></i></a></li>
+                <li><a href="#video" class="link"><i class="fa-solid fa-house" aria-hidden="true"></i></a></li>
+                <li><a href="#skills" class="link"><i class="fa-solid fa-brain"></i></a></li>
+                <li><a href="#formacao" class="link"><i class="fa-duotone fa-solid fa-graduation-cap"></i></a></li>
+                <li><a href="#projetos" class="link"><i class="fa-solid fa-trowel-bricks"></i></a></li>
+                <li><a href="#" class="link" id="botao-tema"></a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +26,7 @@
             <img src="imagens/victor-perfil.jpg" alt="Victor Manoel" class="foto">
             <h1>Victor Manoel</h1>
             <p>
-                🧑‍💻 Técnico em Informática (em formação) | Desenvolvedor Front-end em aprendizado | Projeto de marketplace como TCC | Disponível para estágio ou primeiro emprego
+                Estudante técnico em Informática com conhecimento em desenvolvimento web (HTML e CSS) e familiaridade com ferramentas básicas de informática. Participou do desenvolvimento de um projeto de marketplace como TCC, aplicando habilidades práticas de front-end. Proativo, com boa comunicação e vontade de aprender e crescer na área de tecnologia.
             </p>
             <div id="social">
                 <a href="https://www.linkedin.com/in/victor-manoel-a7abb1341/" target="_blank" rel="nofollow"><i class="fa-brands fa-square-linkedin"></i></a>
@@ -114,11 +114,11 @@
                                     <i class="fa-solid fa-person-rays"></i> Adaptabilidade
                                 </span>
                                 <span class="porcent">
-                                    50%
+                                    55%
                                 </span>
                             </div>
                             <div class="barra">
-                                <div class="progresso" style="width: 50%;"></div>
+                                <div class="progresso" style="width: 55%;"></div>
                             </div>
                         </div>
 
@@ -141,32 +141,144 @@
             
             <article id="formacao">
                 <h2><i class="fa-duotone fa-solid fa-graduation-cap"></i> Formação</h2>
-                    
-            <div id="formacao-container">
-                <div class="curso">
-                    <p class="periodo">2019 - 2019</p>
-                    <h3 class="instituicao">Héliu's Informática</h3>
-                    <p class="titulacao">Cursos de Informática: Windows, Word, Excel, Power Point, Internet e Digitação</p>
-                </div>
-                
-                <div class="curso">
-                    <p class="periodo">2023 - 2025</p>
-                    <h3 class="instituicao">Centro Educacional da Bacia do Rio Corrente</h3>
-                    <p class="titulacao">Técnico em Informática</p>
-                </div>
-                
-            </div>
+                    <div id="formacao-container">
+                        <div class="curso">
+                            <p class="periodo">2019 - 2019</p>
+                            <h3 class="instituicao">Héliu's Informática</h3>
+                            <p class="titulacao">Cursos de Informática: Windows, Word, Excel, Power Point, Internet e Digitação</p>
+                        </div>
+                        
+                        <div class="curso">
+                            <p class="periodo">2023 - 2025</p>
+                            <h3 class="instituicao">Centro Educacional da Bacia do Rio Corrente</h3>
+                            <p class="titulacao">Técnico em Informática</p>
+                        </div>
+                        
+                    </div>
             </article> <!-- FIM ARTICLE#FORMACAO -->
             
             <article id="projetos">
                 <h2><i class="fa-solid fa-trowel-bricks"></i> Projetos</h2>
+                    <div id="projetos-container">
+                        <div class="projeto">
+                            <!-- PROJETO 01 -->
+                            <img class="foto" src="imagens/projeto-01-videos.jpg" alt="projeto-01">
+                                <div class="projeto-info">
+                                    <p class="ano">2025</p>
+                                    <h3 class="titulo">Projeto de Vídeos</h3>
+                                    <p>Projeto construído para treinar a inserção de vídeos em nosso site, além da navegação entre páginas.</p>
+                                    <details>
+                                        <summary>Saiba mais...</summary>
+                                        <p>
+                                            Primeiro projeto construído no Curso de HTML5 e CSS3 do CursoemVídeo onde construímos a navegação entre páginas e a incorporação de mídias, principalmente de imagens e vídeos. Um ótimo início para quem estava em seus primeiros passos em HTML e CSS.
+                                        </p>
+                                    </details>
+                                </div>
+                        </div>
+                        
+                        <div class="projeto">
+                            <!-- PROJETO 02 -->
+                            <img class="foto" src="imagens/projeto-02-cordel.jpg" alt="projeto-01">
+                                <div class="projeto-info">
+                                    <p class="ano">2025</p>
+                                    <h3 class="titulo">Projeto Cordel</h3>
+                                    <p>Projeto construído para treinar efeito parallax em imagens e a apresentaçao de conteúdo em diversos tamanhos de tela.</p>
+                                    <details>
+                                        <summary>Saiba mais...</summary>
+                                        <p>
+                                            Apresentar um conteúdo na tela de forma criativa é sempre um desafio aos desenvolvedores de sites. Nesse projeto, apresentamos um cordel de maneira bem-humorada, responsiva e usando técnicas como parallax para exibição de imagens de fundo.
+                                        </p>
+                                    </details>
+                                </div>
+                        </div>
+
+                        <div class="projeto">
+                            <!-- PROJETO 03 -->
+                            <img class="foto" src="imagens/projeto-03-android.jpg" alt="projeto-01">
+                                <div class="projeto-info">
+                                    <p class="ano">2025</p>
+                                    <h3 class="titulo">Projeto Android</h3>
+                                    <p>Projeto construído para treinar conteúdos e imagens dinâmicas com a História do sistema Android.</p>
+                                    <details>
+                                        <summary>Saiba mais...</summary>
+                                        <p>
+                                            Você sabia que o sistema Android não foi criado inicialmente para ser usado em celulares? Acompanhe esse projeto para conhecer um pouco mais sobre as curiosidades que envolvem o sistema mais popular para smartphones e aprenda como adaptar mídias a diferentes tamanhos de tela.
+                                        </p>
+                                    </details>
+                                </div>
+                        </div>
+
+                        <div class="projeto">
+                            <!-- PROJETO 04 -->
+                            <img class="foto" src="imagens/projeto-04-links.jpg" alt="projeto-01">
+                                <div class="projeto-info">
+                                    <p class="ano">2025</p>
+                                    <h3 class="titulo">Projeto Redes Sociais</h3>
+                                    <p>Projeto construído para treinar responsividade e múltiplos media queries e divulgar as suas principais redes sociais.</p>
+                                    <details>
+                                        <summary>Saiba mais...</summary>
+                                        <p>
+                                            Um meta projeto muito interessante deixa o visitante interagir com um aparelho de smartphone que tem seu conteúdo carregado a cada vez que você clica em um ícone de redes sociais. Interatividade e responsividade para um projeto bem elaborado e que utiliza iframes na sua estrutura principal.
+                                        </p>
+                                    </details>
+                                </div>
+                        </div>
+
+                        <div class="projeto">
+                            <!-- PROJETO 05 -->
+                            <img class="foto" src="imagens/projeto-05-login.jpg" alt="projeto-01">
+                                <div class="projeto-info">
+                                    <p class="ano">2025</p>
+                                    <h3 class="titulo">Projeto Login</h3>
+                                    <p>Projeto construído para treinar responsividade e formulários em uma das telas mais populares em sistemas.</p>
+                                    <details>
+                                        <summary>Saiba mais...</summary>
+                                        <p>
+                                            Criar uma tela de login é algo muito comum na vida de quem vai construir sites. Mas essa tela de login deve conter componentes bonitos e com funcionalidades bem definidas e intuitivas de usar. Essa tela de login vai adaptando seus conteúdos usando caixas flexíveis (flexbox) para funcionar em qualquer tamanho de tela.
+                                        </p>
+                                    </details>
+                                </div>
+                        </div>
+
+                        <div class="projeto">
+                            <!-- PROJETO 06 -->
+                            <img class="foto" src="imagens/projeto-06-album.jpg" alt="projeto-01">
+                                <div class="projeto-info">
+                                    <p class="ano">2025</p>
+                                    <h3 class="titulo">Projeto Álbum de Fotos</h3>
+                                    <p>Projeto construído para treinar conteúdos flexíveis usando CSS FlexBox para mostrar um álbum de fotos.</p>
+                                    <details>
+                                        <summary>Saiba mais...</summary>
+                                        <p>
+                                            Mostrar fotos de tamanhos diferentes em uma mesma tela pode ser um grande desafio de design, mas também pode ser uma grande oportunidade para treinar nossos conhecimentos adquiridos sobre flexbox e criar uma maneira discreta e de bom-gosto para apresentar nossas memórias em forma de imagens.
+                                        </p>
+                                    </details>
+                                </div>
+                        </div>
+
+                        <div class="projeto">
+                            <!-- PROJETO 07 -->
+                            <img class="foto" src="imagens/projeto-07-marketplace.jpg" alt="projeto-01">
+                                <div class="projeto-info">
+                                    <p class="ano">2025</p>
+                                    <h3 class="titulo">Projeto de Marketplace</h3>
+                                    <p>Desenvolvimento de um protótipo de marketplace para TCC, aplicando conceitos full-stack para criar um catálogo de produtos com perfis de vendedores.</p>
+                                    <details>
+                                        <summary>Saiba mais...</summary>
+                                        <p>
+                                            Plataforma digital desenvolvida como TCC para conectar pequenos vendedores independentes a potenciais clientes. O foco foi na criação de uma vitrine elegante e funcional, onde cada lojista possui seu próprio perfil personalizável para exibir seus produtos de forma única e organizada.
+                                        </p>
+                                    </details>
+                                </div>
+                        </div>
+                    </div>
             </article> <!-- FIM ARTICLE#PROJETOS -->
         </section>
 
     </main>
 
     <footer>
-
+        <p>Portfólio desenvolvido por <strong>Victor Manoel</strong> em 2025</p>
     </footer>
 
     <script src="scripts/script.js"></script>
