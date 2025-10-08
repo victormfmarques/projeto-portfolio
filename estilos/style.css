@@ -248,7 +248,6 @@ section#detalhes article#projetos div#projetos-container div.projeto {
   border-radius: 8px;
   padding: 10px;
   transition: border-width .5s ease-in-out, border-color .5s ease-in-out;
-  flex-direction: row-reverse;
 }
 
 section#detalhes article#projetos div#projetos-container div.projeto:hover {
@@ -261,7 +260,7 @@ section#detalhes article#projetos div#projetos-container div.projeto p.ano {
   font-size: 1.1em;
 }
 
-section#detalhes article#projetos div#projetos-container div.projeto img.foto {
+section#detalhes article#projetos div#projetos-container div.projeto .foto {
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
@@ -296,14 +295,14 @@ footer p {
   }
 
   section#ficha {
-    grid-column: 2;
-    height: 650px;
+    grid-column: 2 / 3;
+    height: fit-content;
     position: sticky;
     top: 65px;
   }
 
   section#detalhes {
-    grid-column: 3;
+    grid-column: 3 / 4;
   }
 
   section#detalhes article#skills div#skill-container {
@@ -313,15 +312,21 @@ footer p {
   section#detalhes article#projetos div#projetos-container div.projeto {
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: flex-start;
   }
   
   section#detalhes article#projetos div#projetos-container div.projeto div.projeto-info {
     width: 80%;
   }
 
-  section#detalhes article#projetos div#projetos-container div.projeto img.foto {
-    aspect-ratio: 1/1;
-    max-width: 20%;
+  section#detalhes article#projetos div#projetos-container div.projeto .foto {
+    aspect-ratio: 1/5;
     max-height: 200px;
+    object-fit: cover;
+  }
+
+  section#detalhes article#projetos div#projetos-container div.projeto a {
+    width: 20%;
+    display: block;
   }
 }
